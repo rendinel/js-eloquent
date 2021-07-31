@@ -1,0 +1,81 @@
+Data can be stored in different type of value
+
+numeric 
+integer 31
+fractional 4.5
+
+aritmethic 
++ - / + %(remainder or modulo) 310 % 100 = 14 il resto
+precedence in aritmethic goes *and/ before +-
+if the operator have the same precedence they will be calculated from left to right
+if we want to give precedencewe add () (5+3)*10=80
+
+special numbers
+NaN not a number You’ll get this result when you, 
+for example, try to calculate 0 / 0 (zero divided by zero), 
+Infinity - Infinity, or any number of other numeric 
+operations that don’t yield a meaningful result.
+Infinity and -Infinity represent the positive and negative infinite
+
+string
+used to store text wrapped inside
+`Down on the sea`
+"Lie on the ocean"
+'Float on the ocean'
+n.b string need to match at the start/end
+
+some characters can be difficult to put into string and you need
+to put \ inside it's called excaping the character
+"let\'s"
+"This is the first line\nAnd this is the second" \n means new line
+if you need one \ you need to put \\ so one will appear in the string
+or you can wrap everythin inside backtick and write what you want inside
+
++ will concatenate string
+"con" + "cat" + "e" + "nate" = concatenate
+
+when you use backtick it's called template literals and we can you to 
+pass some javascript Data to the html inside  ${}
+`half of 100 is ${100 / 2}` = half of 100 is 50
+
+unary operator
+Not all operators are symbols. Some are written as words. One example is the typeof operator, which produces a string value naming the type of the value you give it.
+
+console.log(typeof 4.5)
+// → number
+console.log(typeof "x")
+// → string
+The other operators shown all operated on two values, but typeof takes only one. Operators that use two values are called binary operators, while those that take one are called unary operators. The minus operator can be used both as a binary operator and as a unary operator.
+
+console.log(- (10 - 2))
+// → -8
+
+boolean return true or false,used for comparison
+console.log(3 > 2)
+// → true
+console.log(3 < 2)
+// → false
+
+we can compare string
+console.log("Aardvark" < "Zoroaster")
+// → true
+but the result it's non from dictionary but from the unicode
+operators in comparison are <> less or more
+<= >= less or equal plus or equal
+!= different 
+=== equal only(better than 2 because more strict, 2 convert some data into other type causing error) 
+= used to assign
+
+NaN is not only equal to itself because NaN is supposed to denote the result of a nonsensical computation, and as such, it isn’t equal to the result of any other nonsensical computations.
+
+&& both need to be true to return true
+|| only one need to be true to return true
+! flip the value to it's contrary
+when used in aritmethic || lowest precedence the && and then the comparison operator(< == ecc.)
+
+ternary operator
+console.log(true ? 1 : 2);
+// → 1
+console.log(false ? 1 : 2);
+// → 2
+if return true it choose the value on the left,if valse the value on the right
